@@ -66,3 +66,4 @@ means <- dcast(extracted_data_melt, formula = Subjects + Activities ~ variable, 
 # Export data
 library(xlsx)
 write.xlsx(means, file="tidy_data_means.xls")
+write.csv(means, file="tidy_data_means.txt")
